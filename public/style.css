@@ -90,6 +90,10 @@ form button:hover {
   background-color: #59A9C2;
 }
 
+form button:disabled {
+  background-color: #ccc;
+}
+
 /* utility/layout */
 .row {
   display: flex;
@@ -101,4 +105,22 @@ form button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.error {
+  padding: 1em 2em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  background-color: red;
+  color: white;
+  margin-top: 1em;
+}
+
+.warning {
+  padding: 0 0.5em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  background-color: orange;
+  color: white;
+  margin-left: 1em;
 }
