@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "UnsubMe Extension",
+  "description": "A Chrome extension that helps you manage your email subscriptions",
+  "version": "1.0",
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_title": "Open the popup",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_security_policy": "default-src 'self'; script-src 'self' https://apis.google.com 'unsafe-eval'; object-src 'self'",
+  "oauth2": {
+    "client_id": "730617941965-8i8lo6081qmpet6gbouqs9tdsleqte95.apps.googleusercontent.com",
+    "scopes": ["https://mail.google.com/"]
+  },
+  "permissions": ["identity", "storage", "https://mail.google.com/"]
+}
